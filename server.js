@@ -16,7 +16,10 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URL || "mongodb://localhost/workout", { useNewUrlParser : true})
+mongoose.connect(process.env.MONGODB_URL ||
+     "mongodb://user:password1@ds261460.mlab.com:61460/heroku_nsdrv7kt", 
+     { useNewUrlParser : true}
+     );
 
 app.get("/stats",(req,res)=>{
     res.sendFile(path.join(__dirname, "/public/stats.html"));
