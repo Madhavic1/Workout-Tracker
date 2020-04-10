@@ -25,3 +25,4 @@ The user will be able to:
 https://github.com/Madhavic1/Workout-Tracker.git
 
 ### Link to the deployed application
+https://boiling-headland-69750.herokuapp.com/
